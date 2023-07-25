@@ -1,0 +1,11 @@
+﻿public class Node<T>
+{
+    public Node(T data)
+    {
+        Data = data;
+    }
+
+    public T Data { get; set; }
+    public Node<T>? Next { get; set; }  // Значение, которому присваивается null
+                                        // При создании, если это возможно
+}
